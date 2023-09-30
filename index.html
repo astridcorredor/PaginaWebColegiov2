@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- seccion barra navegacion --> 
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">IED Ignacio Pescador</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Noticias">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contactos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Primaria
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#sedes-rurales">Sedes Rurales</a></li>
+                <li><a class="dropdown-item" href="#sede-urbana">Sede Urbana Laureano Gomez</a></li>
+                <li><a class="dropdown-item" href="#sede-preescolar">Sede Urbana Preescolar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Secundaria
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#sexto-bto">Sexto</a></li>
+                <li><a class="dropdown-item" href="#septimo-bto">Septimo</a></li>
+                <li><a class="dropdown-item" href="#octavo-bto">Octavo</a></li>
+                <li><a class="dropdown-item" href="#">Noveno</a></li>
+                <li><a class="dropdown-item" href="#">Decimo</a></li>
+                <li><a class="dropdown-item" href="#">Undecimo</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br>
+    <div class="container-fluid text-center">
+    <h2 class="bg-info">Sistema de Educación Relacional de Cundinamarca</h2>
+    </div>
+  <br>
+<!-- fin seccion barra navegacion-->  
+<!-- inicio seccion carrusel-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/elpulpito2.png" class="d-block w-50 mx-auto" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sedes Rurales</h5>
+            <p>Siempre cerca de nuestros estudiantes</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/bachillerato3.jpg" class="d-block w-50 mx-auto" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sede Bachillerato</h5>
+            <p>Un lugar como ningún otro</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/primaria2.jpg" class="d-block w-50 mx-auto" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sede Primaria</h5>
+            <p>Un lugar para crear sueños</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- fin seccion carrusel-->
+  <br>
+    <div class="container-fluid text-center">
+      <h1 class="bg-info" id="Noticias">Noticias</h1>
+    </div>
+    <!-- inicio seccion card-->
+    <div class="container text-center">
+      <div class="row row-cols-auto">
+        <div class="col-4">
+          <div class="card" style="max-width: 18rem;">
+            <img src="img/primaria2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Comunicados</h5>
+              <p class="card-text">Historial de comunicados 2023</p>
+              <a href="#" class="btn btn-primary">Comunicados PDF</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="max-width: 18rem;">
+            <img src="img/bachillerato3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Resoluciones</h5>
+              <p class="card-text">Historial de Resoluciones</p>
+              <a href="#" class="btn btn-primary">Resoluciones PDF</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="max-width: 18rem;">
+            <img src="img/elpulpito2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Eventos</h5>
+              <p class="card-text">Eventos Institucionales</p>
+              <a href="#" class="btn btn-primary">Galería</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- fin seccion card-->
+  <br>
+    <div class="container-fluid text-center">
+      <h1 class="bg-info" id="Recursos de Aprendizaje">Recursos de Aprendizaje</h1>
+    </div>
+  <br>
+    <div class="container-fluid text-center">
+      <h1 class="bg-info" id="Primaria">Primaria</h1>
+    </div>
+  <br>
+  <!-- incio seccion card2 Recursos Primaria-->
+      <div class="container text-center">
+        <div class="row row-cols-auto">
+          <div class="col-4">
+            <div class="card" style="max-width: 18rem;">
+              <img src="img/lupa-campo.webp" class="card-img-top" alt="..." width="10rem">
+              <div class="card-body">
+                <h5 class="card-title" id="sedes-rurales">Sede Rurales</h5>
+                <p class="card-text">Recursos de Aprendizaje</p>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Asignaturas
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Artistica</a></li>
+                  <li><a class="dropdown-item" href="#">Ciencias Naturales</a></li>
+                  <li><a class="dropdown-item" href="#">Ciencias Sociales</a></li>
+                  <li><a class="dropdown-item" href="#">Emprendimiento</a></li>
+                  <li><a class="dropdown-item" href="#">Etica</a></li>
+                  <li><a class="dropdown-item" href="#">Religión</a></li>
+                  </ul>
+              </div>             
+            </div>
+          </div>
+          <div class="col-4">
+              <div class="card" style="max-width: 18rem;">
+                <img src="img/lupa-campo.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" id="sede-urbana">Sede Urbana Laureano Gomez</h5>
+                  <p class="card-text">Recursos de Aprendizaje</p>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Asignaturas
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Artistica</a></li>
+                    <li><a class="dropdown-item" href="#">Ciencias Naturales</a></li>
+                    <li><a class="dropdown-item" href="#">Ciencias Sociales</a></li>
+                    <li><a class="dropdown-item" href="#">Emprendimiento</a></li>
+                    <li><a class="dropdown-item" href="#">Etica</a></li>
+                    <li><a class="dropdown-item" href="#">Religión</a></li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+          <div class="col-4">
+                <div class="card" style="max-width: 18rem;">
+                  <img src="img/preescolar.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" id="sede-preescolar">Sede Preescolar</h5>
+                    <p class="card-text">Recursos de Aprendizaje</p>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Asignaturas
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Artistica</a></li>
+                      <li><a class="dropdown-item" href="#">Ciencias Naturales</a></li>
+                      <li><a class="dropdown-item" href="#">Ciencias Sociales</a></li>
+                      <li><a class="dropdown-item" href="#">Emprendimiento</a></li>
+                      <li><a class="dropdown-item" href="#">Etica</a></li>
+                      <li><a class="dropdown-item" href="#">Religión</a></li>
+                      </ul>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div> 
+ 
+<br>
+<div class="container-fluid text-center">
+<h1 class="bg-info" id="Secundaria">Secundaria</h1>
+</div>
+<br>
+<!-- incio seccion card3 Recursos Secundaria--> 
+<div class="container text-center">
+  <div class="row row-cols-auto">
+    <div class="col-4">
+      <div class="card" style="max-width: 18rem;">
+        <img src="img/sextoimagen.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" id="sexto-bto">Sexto</h5>
+          <p class="card-text">Recursos de Aprendizaje</p>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Asignaturas
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Artistica</a></li>
+            <li><a class="dropdown-item" href="#">Ciencias Naturales</a></li>
+            <li><a class="dropdown-item" href="#">Ciencias Sociales</a></li>
+            <li><a class="dropdown-item" href="#">Emprendimiento</a></li>
+            <li><a class="dropdown-item" href="#">Etica</a></li>
+            <li><a class="dropdown-item" href="#">Religión</a></li>
+            </ul>
+        </div>             
+      </div>
+    </div>
+    <div class="col-4">
+        <div class="card" style="max-width: 18rem;">
+          <img src="img/septimo-imagen.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" id="septimo-bto">Septimo</h5>
+            <p class="card-text">Recursos de Aprendizaje</p>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Asignaturas
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Artistica</a></li>
+              <li><a class="dropdown-item" href="#">Ciencias Naturales</a></li>
+              <li><a class="dropdown-item" href="#">Ciencias Sociales</a></li>
+              <li><a class="dropdown-item" href="#">Emprendimiento</a></li>
+              <li><a class="dropdown-item" href="#">Etica</a></li>
+              <li><a class="dropdown-item" href="#">Religión</a></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+    <div class="col-4">
+          <div class="card" style="max-width: 18rem;">
+            <img src="img/octavo-iamgen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="octavo-bto">Octavo</h5>
+              <p class="card-text">Recursos de Aprendizaje</p>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Asignaturas
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Artistica</a></li>
+                <li><a class="dropdown-item" href="#">Ciencias Naturales</a></li>
+                <li><a class="dropdown-item" href="#">Ciencias Sociales</a></li>
+                <li><a class="dropdown-item" href="#">Emprendimiento</a></li>
+                <li><a class="dropdown-item" href="#">Etica</a></li>
+                <li><a class="dropdown-item" href="#">Religión</a></li>
+                </ul>
+            </div>
+          </div>
+    </div>
+  </div>
+</div> 
+
+
+      
+</body>
+</html>
